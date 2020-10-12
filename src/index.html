@@ -7,7 +7,56 @@
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <section class="main">
+      <div class="witcher">
+        <img
+          src="images/sparks_back.png"
+          alt="witcher"
+          class="witcher__sparks_back"
+        >
+
+        <img
+          src="images/sparks_front.png"
+          alt="witcher"
+          class="witcher__sparks_front"
+        >
+
+        <img
+          src="images/witcher.png"
+          alt="witcher"
+          class="witcher__image"
+        >
+      </div>
+      <div class="bonus">
+        <h1 class="bonus__size">300%</h1>
+        <h3 class="bonus__text">welcome bonus</h3>
+
+        <div class="copy_code_button">
+          <button class="code_button code_button__text">
+            <span>witcher</span>
+          </button>
+
+          <button
+            class="code_button code_button__copy"
+            id="copyText"
+          >
+            <span>copy code</span>
+          </button>
+        </div>
+
+        <button class="play_button">
+          <span>Play now</span>
+        </button>
+      </div>
+      <img
+        src="images/logo.png"
+        alt="witcher"
+        class="logo"
+      >
+      <p class="terms">
+        *Terms and Conditions Apply
+      </p>
+    </section>
+    <script src="scripts/main.js"></script>
   </body>
 </html>

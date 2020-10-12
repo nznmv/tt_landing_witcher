@@ -1,0 +1,45 @@
+.code_button {
+  background: none;
+  color: white;
+  height: 80px;
+  border: 1px #464646 dashed;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  outline: none;
+
+  transition: 0.3s;
+}
+
+.code_button__copy {
+  width: 198px;
+  border-radius: 0 40px 40px 0;
+  border-left: 1px #464646 solid;
+  font-size: 18px;
+  z-index: 1;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #f73427;
+    border: none;
+  }
+
+  &:active {
+    color: black;
+  }
+
+}
+
+.code_button__text {
+  width: 270px;
+  border-radius: 40px 0 0 40px;
+  border-right: none;
+  color: #f73427;
+  font-size: 40px;
+  z-index: 3;
+}
+
+.copy_code_button {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}

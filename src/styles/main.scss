@@ -1,7 +1,82 @@
 @import "utils";
 @import "fonts";
-@import "typography";
+@import "resets";
+@import "witcher";
+@import "bonus";
+@import "code_button";
+@import "play_buttons";
 
 body {
-  background: $c-gray;
+  background: white;
+}
+
+.main {
+  background-image: url("/images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  justify-content: center;
+
+  position: relative;
+
+  @media (max-width: 481px) {
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    height: auto;
+    width: 100vw;
+  }
+}
+
+.logo {
+  width: 214px;
+  height: 60px;
+  position: absolute;
+  bottom: 70px;
+  left: 70px;
+
+  z-index: 4;
+
+  @media (max-width: 1400px) {
+    transform: scale(0.8);
+    left: 30px;
+    bottom: 30px;
+  }
+
+  @media (max-width: 481px) {
+    transform: scale(0.6);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0 auto;
+  }
+}
+
+.terms {
+  position: absolute;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  color: #464646;
+
+  bottom: 70px;
+  right: 70px;
+
+  @media (max-width: 1400px) {
+    transform: scale(0.8);
+    right: 30px;
+    bottom: 30px;
+  }
+
+  @media (max-width: 481px) {
+    bottom: 10px;
+    z-index: 9;
+    right: 0;
+    left: 0;
+    text-align: center;
+  }
 }

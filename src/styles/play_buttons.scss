@@ -1,0 +1,27 @@
+.play_button {
+  background: #f73427;
+  height: 80px;
+  width: 360px;
+  border: none;
+  border-radius: 40px;
+  margin-top: 60px;
+
+  text-transform: uppercase;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &:active {
+    color: black;
+  }
+
+  transition: 0.3s;
+}

@@ -1,0 +1,24 @@
+.bonus {
+  color: white;
+  font-family: Cambira, sans-serif;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 6;
+
+  @extend %maxWidthBonus;
+}
+
+.bonus__size {
+  font-family: Cambira, sans-serif;
+  font-size: 208.55px;
+}
+
+.bonus__text {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 67.58px;
+}

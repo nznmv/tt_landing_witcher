@@ -1,4 +1,28 @@
-%h1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+%maxWidthBonus {
+
+  @media (max-width: 1600px) {
+    transform: scale(0.7);
+  }
+
+  @media (max-width: 1250px) {
+    transform: scale(0.6);
+    margin-left: -100px;
+  }
+
+  @media (max-width: 481px) {
+    transform: scale(0.5);
+    margin: auto;
+  }
+}
+
+%maxWidthWitcher {
+
+  @media (max-width: 1400px) {
+    transform: scale(0.9) translateY(50px);
+  }
+
+  @media (max-width: 481px) {
+    transform: scale(0.8) translateY(110px);
+    margin-left: -25px;
+  }
 }

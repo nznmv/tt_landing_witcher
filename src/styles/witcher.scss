@@ -1,0 +1,26 @@
+.witcher__image {
+  height: 100vh;
+  width: auto;
+  position: relative;
+  z-index: 2;
+
+  @extend %maxWidthWitcher;
+}
+
+.witcher__sparks_back {
+  position: absolute;
+  z-index: 1;
+
+  @extend %maxWidthWitcher;
+
+  @media (max-width: 481px) {
+    bottom: 100px;
+  }
+}
+
+.witcher__sparks_front {
+  z-index: 3;
+  position: absolute;
+
+  @extend %maxWidthWitcher;
+}
